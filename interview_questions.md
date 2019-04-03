@@ -182,3 +182,29 @@ for (let i = 1; i <= 100; i++) {
   console.log(f ? (b ? 'FizzBuzz' : 'Fizz') : b ? 'Buzz' : i);
 }
 ```
+
+### Create a function called isLastEvenOrOdd, the function should:
+- take one parameter, an array of numbers
+- return the string 'even' or 'odd' based on whether the _last_ item in the array is even or odd
+
+```
+function isLastEvenOdd(numArray) {
+    var length = numArray.length - 1;
+    var result = numArray[length] % 2 === 0 ? 'even' : 'odd';
+    return result;
+}
+
+var resultOfIsLastEvenOdd = isLastEvenOdd([1, 3, 4, 6]);
+
+
+function isLastEvenOdd(numArray) {
+  var length = numArray.length - 1;
+  if (numArray[length] % 2 === 0 ) {
+    return 'even'; 
+  } else {
+    return 'odd'; 
+  }
+}
+
+console.log(isLastEvenOdd([1, 4, 7, 11]));
+```
